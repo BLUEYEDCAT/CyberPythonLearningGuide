@@ -5,7 +5,7 @@ import socket
 
 # define the target host and port for later uses
 # Or from user prompts
-target_host = "www.infopro.com.my"
+target_host = "www.amcorp.com.my"
 target_port = 80
 
 # create the socket and assign it to object client
@@ -16,7 +16,7 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # connect the socket to a remote address
 # socket.connect(address) takes in one argument
 # it must follow the address family standard
-# in this case, IPV4 requires a string value of domain man and a port number
+# in this case, IPV4 requires a string value of domain name and a port number
 client.connect((target_host, target_port))
 
 # define the string
